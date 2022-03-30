@@ -1,0 +1,47 @@
+$wdth:50px;
+$hght:50px;
+
+td {
+    width: $wdth;
+    height: $hght;
+}
+.btn {
+    background-color: rgb(233, 140, 228);
+    text-align: center;
+    padding: 2px 10px;
+    border-radius: 20px;
+    border: 0;
+}
+
+button:hover {
+    scale: 1.5;
+    transition: 0.3s;
+}
+
+h1 {
+    color: black;
+    font-size:1pc;
+}
+
+@for $i from 1 through 10 {
+    .latime-#{$i} {
+        width: $i*$wdth;
+    }
+    .inaltime-#{$i} {
+        height: $i*$hght;
+    }
+}   
+
+$teme:("normal":"grey","special":"blue","atentie":"red");
+@each $nume-tema,$culoare-tema in $teme {
+    .bg-#{$nume-tema}{
+        background-color: $culoare-tema;
+    }   
+}
+
+$sizes:10px,50px,100px;
+@each $size in $sizes {
+        .icon-#{$size} {
+            font-size:$size;
+        }
+}
