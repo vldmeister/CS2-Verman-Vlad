@@ -1,0 +1,39 @@
+body{
+    background-color: rgb(119, 0, 255);
+}
+.guy{
+    background: url('/images/capguy-walk.png');
+    width: 184px;
+    height: 325px;
+    //background-position: 0 0;
+}
+@for $i from 0 through 7{
+    .guy-#{$i+1}{
+        background-position: -($i*184px) 0;
+    }
+}
+
+$fingers-width: 480px;
+.fingers{
+    background: url('/images/degete.png');
+    width: $fingers-width;
+    height: 612px;
+    //background-position: 0 0;
+}
+@for $i from 0 through 4{
+    .fingers-#{$i+1}{
+        background-position: -($i*$fingers-width) 0;
+    }
+}
+
+.running {
+    background: url('/S07/images/running.png');
+    width: 473px;
+    height: 470px;
+}
+
+@for $i from 0 through 10{
+    .running-#{$i+1}{
+        background-position: -($i*47px) 0;
+    }
+}
