@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>js</h1>
+    <script>
+
+        function validation(cnp) {
+            if (typeof (cnp) != "string") return false;
+            if (cnp.length != 13) return false;
+            for (let e of cnp.split("")) if (!isDigit(e)) return false;
+            let s = cnp.substr(0, 1);
+            if (s == 0) return false;
+            let arrayCNP=cnp.split('')
+            console.log(arrayCNP)
+
+
+            return valid
+        }
+
+    </script>
+</body>
+</html>
