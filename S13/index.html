@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="//cdn.datatables.net/1.12.0/css/jquery.dataTables.min.css">
+</head>
+<body>
+    <h1>l13</h1>
+    <div>
+        <svg style="border: solid red 2px;" id="mySVG">
+
+        </svg>
+    </div>
+    <div>
+        <table id="myTable">
+            <thead>
+                <tr>
+                    <th>Edge</th>
+                    <th>V1-V2</th>
+                    <th>F1-F2</th>
+                    <th>P1-P2</th>
+                </tr>
+            </thead>
+            <tbody id="myData">            
+            </tbody>
+        </table>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.0/js/jquery.dataTables.js"></script>
+    <script>
+        $.get("https://mgx17.github.io/AJAX/input.json", function(data){
+            console.log(data);
+            drawData(data);
+            writeTable(data);
+        })
+
+        function drawData(obj) {
+
+        }
+
+        function writeTable(obj) {
+            const tb=document.getElementById("myData");
+            for (const edge of obj.Edges){
+                const tr=document.createElement("tr");
+                tr.innerHTML=`<td>${edge.nr}</td><td>${edge.V1}-${edge.V2}</td><td>${edge.F1}-${edge.F2}</td><td>${edge.P1}-${edge.P2}</td>`
+                tb.append(tr);
+            }
+            $('#myTable').DataTable();
+        }
+        
+    </script>
+    
+</body>
+</html>
