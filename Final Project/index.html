@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+                <a href="#" class="logo navbar-brand"><i class="bi bi-gem"></i></i> Diamond</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse text-light" id="navmenu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#services" class="nav-link">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#about" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <span class="nav-link px-4">|</span>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://www.twitter.com" class="nav-link px-2"><i class="bi bi-twitter"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://www.facebook.com" class="nav-link px-2"><i class="bi bi-facebook"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://www.instagram.com" class="nav-link px-2"><i class="bi bi-instagram"></i></a>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+    </nav>
+
+    <section class="home-section bg-image text-light p-5 p-lg-0 pt-lg-5 text-center text-start">
+        <div class="container">
+            <div class="homediv align-items-center justify-content-center">
+                <h1 class="homeh1 p-5 text-center">Deluxe Rentals</h1>
+                <h6 class="homeh6 p-5 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aperiam mollitia recusandae ab qui alias.</h5>
+            </div>
+        </div>
+    </section>
+
+    <section class="cars-section text-light text-center p-5" id="services">
+        <div class="container">
+            <h1 class="gradient-h pb-4">Select One Of Our Available <br> Deluxe Vehicles</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur cumque optio repudiandae. Illo, aut eligendi.</p>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All</button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="all-button dropdown-item" href="#services" onclick="selectType(this)" id="allButton">All</a>
+                  <a class="automatic-button dropdown-item" href="#automatic" onclick="selectType(this)" id="automaticButton">Automatic</a>
+                  <a class="manual-button dropdown-item" href="#manual" onclick="selectType(this)" id="manualButton">Manual</a>
+                </div>
+              </div>
+            <div class="row text-center g-4 p-4 py-sm-3" id="automatic">
+                <div class="col-md">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <div class="img mb-3">
+                                <img class="card-img-top" src="../site3/images/audi.jpg" alt="Card image cap">
+                            </div>
+                            <h3 class="card-title mb-3">
+                                Automatic Car
+                            </h3>
+                            <button class="btn btn-lg px-5 m-2 text-center text-light" data-toggle="modal" data-target="#modal">Rent Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <div class="img mb-3">
+                                <img class="card-img-top" src="../site3/images/audi2.jpg" alt="Card image cap">
+                            </div>
+                            <h3 class="card-title mb-3">
+                                Automatic Car
+                            </h3>
+                            <button class="btn btn-lg px-5 m-2 text-center text-light" data-toggle="modal" data-target="#modal">Rent Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <div class="img mb-3">
+                                <img class="card-img-top" src="../site3/images/continental.webp" alt="Card image cap">
+                            </div>
+                            <h3 class="card-title mb-3">
+                                Automatic Car
+                            </h3>
+                            <button class="btn btn-lg px-5 m-2 text-center text-light" data-toggle="modal" data-target="#modal">Rent Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center g-4 p-4 py-sm-3" id="manual">
+                <div class="col-md">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <div class="img mb-3">
+                                <img class="card-img-top" src="../site3/images/car.jpg" alt="Card image cap">
+                            </div>
+                            <h3 class="card-title mb-3">
+                                Manual Car
+                            </h3>
+                            <button class="btn btn-lg px-5 m-2 text-center text-light" data-toggle="modal" data-target="#modal">Rent Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <div class="img mb-3">
+                                <img class="card-img-top" src="../site3/images/car.jpg" alt="Card image cap">
+                            </div>
+                            <h3 class="card-title mb-3">
+                                Manual Car
+                            </h3>
+                            <button class="btn btn-lg px-5 m-2 text-center text-light" data-toggle="modal" data-target="#modal">Rent Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <div class="img mb-3">
+                                <img class="card-img-top" src="../site3/images/car.jpg" alt="Card image cap">
+                            </div>
+                            <h3 class="card-title mb-3">
+                                Manual Car
+                            </h3>
+                            <button class="btn btn-lg px-5 m-2 text-center text-light" data-toggle="modal" data-target="#modal">Rent Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title text-dark" id="exampleModalLongTitle">Are you sure?</h5>
+                  </button>
+                </div>
+                <div class="modal-body text-dark">
+                  Are you sure you want to rent this car?
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Confirm</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <section class="about-section bg-light text-center p-5" id="about">
+        <div class="container p-5">
+            <h1 class="abouth pt-5 pr-5 pl-5 ">ABOUT US</h1>
+            <h6 class="abouth6 p-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam corrupti ab beatae repudiandae fuga tempora nulla recusandae provident temporibus enim, sequi, voluptates numquam iste, vero accusantium blanditiis? Ipsum, asperiores cupiditate?</p>
+        </div>
+
+        <div id="carousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="card1">
+                    <div class="card-body text-center">
+                        <h1 class="pb-2"><i class="bi bi-hourglass text-light"></i></h1>
+                        <h3 class="card-title mb-3 text-light pb-5">No Waiting Time</h3>
+                        <p class="text-light">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint necessitatibus hic, labore dicta aliquid itaque.</p>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card1">
+                    <div class="card-body text-center">
+                        <h1 class="pb-2 text-light"><i class="bi bi-calendar-check"></i></h1>
+                        <h3 class="card-title mb-3 text-light pb-5">Available 24/7</h3>
+                        <p class="text-light">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint necessitatibus hic, labore dicta aliquid itaque.</p>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card1">
+                    <div class="card-body text-center">
+                        <h1 class="pb-2 text-light"><i class="bi bi-credit-card"></i></h1>
+                        <h3 class="card-title mb-3 text-light pb-5">Online Pay</h3>
+                        <p class="text-light">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint necessitatibus hic, labore dicta aliquid itaque.</p>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden"></span>
+              </button>
+          </div>
+
+
+    </section>
+
+    <section class="contact text-light p-5 mb-4" id="contact">
+
+        <h2 class="font-weight-bold text-center p-5 my-4">Contact us</h2>
+
+        <div class="row">
+
+        <div class="col-md-12 mb-5 px-5">
+            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                <div class="row">
+
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="textarea form-control m-3" placeholder="Name">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="email" name="email" class="textarea form-control m-3" placeholder="Email">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form mb-0">
+                            <input type="text" id="subject" name="subject" class="textarea form-control m-3" placeholder="Subject">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-12">
+
+                        <div class="md-form">
+                            <textarea type="text" id="message" name="message" rows="2" class="textarea form-control md-textarea m-3" placeholder="Message"></textarea>
+                        </div>
+
+                    </div>
+                </div>
+
+            </form>
+
+            <div class="text-center text-md-left">
+                <a class="btn btn-dark px-5 m-3">Send Email</a>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="map-responsive">
+            <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=Eiffel+Tower+Paris+France" width="100%" height="650" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        </div>
+    </section>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script>
+    function selectType(item) {
+        document.getElementById("dropdownMenuButton").innerHTML = item.innerHTML;
+    }
+</script>
+<script>
+
+    var button = document.getElementById('manualButton');
+
+    button.onclick = function() {
+        var div = document.getElementById('automatic');
+        if (div.style.display !== 'none') {
+            div.style.display = 'none';
+        }
+        var div = document.getElementById('manual');
+            div.style.display = 'flex';
+    };
+    
+</script>
+
+<script>
+
+    var button = document.getElementById('automaticButton');
+
+    button.onclick = function() {
+        var div = document.getElementById('manual');
+        if (div.style.display !== 'none') {
+            div.style.display = 'none';
+        }
+        var div = document.getElementById('automatic');
+            div.style.display = 'flex';
+    };
+
+</script>
+
+<script>
+
+    var button = document.getElementById('allButton');
+
+    button.onclick = function() {
+        var div = document.getElementById('automatic');
+        if (div.style.display !== 'flex') {
+            div.style.display = 'flex';
+        }
+        var div = document.getElementById('manual');
+        if (div.style.display !== 'flex') {
+            div.style.display = 'flex';
+        }
+    };
+
+</script>
+
+</body>
+</html>
