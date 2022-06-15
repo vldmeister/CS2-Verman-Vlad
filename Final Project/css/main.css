@@ -1,98 +1,98 @@
 body {
-  font-family: 'Andada Pro', serif;
-  background-color: #0c0b0b;
-}
-
-.navbar {
-  background-color: #131212;
-}
-
-.home-section {
-  background: url(https://cdn.allwallpaper.in/wallpapers/1920x1080/5311/dark-cars-audi-r8-headlights-2013-1920x1080-wallpaper.jpg) no-repeat center center fixed;
-  background-size: cover;
-  max-width: 100%;
-  height: auto;
-  max-height: 100%;
-}
-
-.homediv {
-  padding: 21em 0;
-}
-
-.cars-section {
-  background-color: #0c0b0b;
-}
- 
-.card {
-  background-color: #191717;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.card:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-}
-
-.btn {
-  background-color: #272323;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.btn:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-}
-
-.aboutdiv {
-  padding: 15em 0;
-}
-
-.abouth {
-  letter-spacing: 10px;
-}
-
-.carousel {
-  background-color: #0c0b0b;
-}
-
-.contact {
-  background-color: #0c0b0b;
-}
-
-.textarea {
-  background-color: #0c0b0b;
-  color: white;
-}
-
-input[type=text]:focus {
-  background: #0c0b0b;
-  color: white;
-}
-
-textarea[type=text]:focus {
-  background: #0c0b0b;
-  color: white;
-}
-
-.card1 {
-  background-color: #0c0b0b;
-  padding: 3em;
-}
-
-.map-container {
-  overflow: hidden;
-  padding-bottom: 56%;
-  position: relative;
-  height: 0;
-}
-
-.map-container iframe {
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-}
-/*# sourceMappingURL=main.css.map */
+    font-family: 'Andada Pro', serif;
+    background-color: #0c0b0b;
+  }
+  
+  .navbar {
+    background-color: #131212;
+  }
+  
+  .home-section {
+    background: url(https://cdn.allwallpaper.in/wallpapers/1920x1080/5311/dark-cars-audi-r8-headlights-2013-1920x1080-wallpaper.jpg) no-repeat center center fixed;
+    background-size: cover;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+  }
+  
+  .homediv {
+    padding: 21em 0;
+  }
+  
+  .cars-section {
+    background-color: #0c0b0b;
+  }
+   
+  .card {
+    background-color: #191717;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  
+  .card:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  
+  .btn {
+    background-color: #272323;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  
+  .btn:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  
+  .aboutdiv {
+    padding: 15em 0;
+  }
+  
+  .abouth {
+    letter-spacing: 10px;
+  }
+  
+  .carousel {
+    background-color: #0c0b0b;
+  }
+  
+  .contact {
+    background-color: #0c0b0b;
+  }
+  
+  .textarea {
+    background-color: #0c0b0b;
+    color: white;
+  }
+  
+  input[type=text]:focus {
+    background: #0c0b0b;
+    color: white;
+  }
+  
+  textarea[type=text]:focus {
+    background: #0c0b0b;
+    color: white;
+  }
+  
+  .card1 {
+    background-color: #0c0b0b;
+    padding: 3em;
+  }
+  
+  .map-container {
+    overflow: hidden;
+    padding-bottom: 56%;
+    position: relative;
+    height: 0;
+  }
+  
+  .map-container iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+  /*# sourceMappingURL=main.css.map */
